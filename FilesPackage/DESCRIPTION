@@ -1,0 +1,16 @@
+Package: meupacote
+Title: Data Manipulation Adolescendo Bank
+Version: 0.0.0.9000
+Authors@R: 
+    person("Marilia", "Espindola", , "m.espindola@unifesp.br", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Package for data manipulation of bank Adolescendo Project
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.0
+Imports: 
+    stats
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
