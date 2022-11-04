@@ -13,7 +13,18 @@ cleanrows <- function(z,t){# z = database t= vector of variable
 }
 
 
+# Attempt to created a function
 
+PDS5 <- bankwithall[,28]
+PDS5 <- lapply(PDS5, FUN = function(PDS5)
+{ifelse( PDS5 == 'Boy', 0,
+         ifelse( PDS5 == 'BOY', 0,
+                 ifelse( PDS5 == 'NO', 1,
+                         ifelse( PDS5 == 'yes',2,
+                                 ifelse( PDS5 == 'YES',2,PDS5)))))})
+
+PDS5 <- lapply(PDS5,FUN = function(PDS5){as.numeric(PDS5)})
+bankwithall[,28]<- PDS5
 
 
 
