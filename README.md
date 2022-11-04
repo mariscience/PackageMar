@@ -1,2 +1,2 @@
-# Package for My PhD (In Developing)
- R package for data manipulation
+# Package for My PhD (In Progress)
+ R package for data manipulation (in progress)
